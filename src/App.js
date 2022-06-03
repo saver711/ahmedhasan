@@ -31,7 +31,7 @@ function App() {
   /////////// SIDE EFFECTS
   ///
   // useEffect(() => {
-  //   if (location.pathname.startsWith("/ahmedhassan/work")) {
+  //   if (location.pathname.startsWith("/ahmedhasan/work")) {
   //     setIsMounted(true)
   //   }
   //   return () => setIsMounted(false)
@@ -53,7 +53,7 @@ function App() {
     <>
       <Nav
         invert={isMounted}
-        white={location.pathname.startsWith("/ahmedhassan/work")}
+        white={location.pathname.startsWith("/ahmedhasan/work")}
         showContactModal={showContactModal}
         changeNavOnScroll={changeNavOnScroll}
         showContactModalUpdater={showContactModalUpdater}
@@ -78,7 +78,7 @@ function App() {
             />
           }
         />
-        {/* <Route path="/ahmedhassan/cases" element={<Cases title="Ahmed Hasan | Cases" />} /> */}
+        {/* <Route path="/ahmedhasan/cases" element={<Cases title="Ahmed Hasan | Cases" />} /> */}
         <Route
           path="/ahmedhasan/skills"
           element={
@@ -114,7 +114,7 @@ function App() {
               className={
                 isMounted
                   ? "modal yellowModal"
-                  : location.pathname.startsWith("/ahmedhassan/work") &&
+                  : location.pathname.startsWith("/ahmedhasan/work") &&
                     !changeNavOnScroll
                   ? "modal darkModal"
                   : "modal"
