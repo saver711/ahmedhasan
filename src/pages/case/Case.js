@@ -57,7 +57,7 @@ const cases = [
           hasHover: true,
           innerText: [
             {
-              val: "Well, Since ",
+              val: "Since ",
             },
             {
               val: "the client is me😄",
