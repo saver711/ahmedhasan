@@ -205,7 +205,7 @@ export const Case = ({ changeNavOnScrollUpdater }) => {
   ///
   const navigateFun = () => {
     const zz = cases.find((item) => item.id === id)
-    !zz && navigate("/ahmedhasan/work", { replace: true })
+    !zz && navigate("/work", { replace: true })
     zz && theCaseUpdater(zz)
   }
 

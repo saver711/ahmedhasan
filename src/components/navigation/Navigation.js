@@ -77,7 +77,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
             >
               <NavLink
                 onClick={() => showNavigationUpdater(false)}
-                to="/ahmedhasan"
+                to="/"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 <span>01</span>
@@ -90,7 +90,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
             >
               <NavLink
                 onClick={() => showNavigationUpdater(false)}
-                to="/ahmedhasan/work"
+                to="/work"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 <span>02</span>
@@ -103,7 +103,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
             >
               <NavLink
                 onClick={() => showNavigationUpdater(false)}
-                to="/ahmedhasan/about"
+                to="/about"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 <span>03</span>
@@ -116,7 +116,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
             >
               <NavLink
                 onClick={() => showNavigationUpdater(false)}
-                to="/ahmedhasan/skills"
+                to="/skills"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 <span>04</span>
@@ -130,7 +130,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
             >
               <NavLink
                 onClick={() => showNavigationUpdater(false)}
-                to="/ahmedhasan/cases"
+                to="/cases"
                 className={({ isActive }) => (isActive ? classes.active : "")}
               >
                 <span>05</span>

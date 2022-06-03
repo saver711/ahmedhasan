@@ -31,7 +31,7 @@ function App() {
   /////////// SIDE EFFECTS
   ///
   // useEffect(() => {
-  //   if (location.pathname.startsWith("/ahmedhasan/work")) {
+  //   if (location.pathname.startsWith("/work")) {
   //     setIsMounted(true)
   //   }
   //   return () => setIsMounted(false)
@@ -53,7 +53,7 @@ function App() {
     <>
       <Nav
         invert={isMounted}
-        white={location.pathname.startsWith("/ahmedhasan/work")}
+        white={location.pathname.startsWith("/work")}
         showContactModal={showContactModal}
         changeNavOnScroll={changeNavOnScroll}
         showContactModalUpdater={showContactModalUpdater}
@@ -61,7 +61,7 @@ function App() {
       <Routes>
         <Route
           // for github pages >>> "" not "/"
-          path="/ahmedhasan"
+          path="/"
           element={
             <Home
               showContactModalUpdater={showContactModalUpdater}
@@ -70,7 +70,7 @@ function App() {
           }
         />
         <Route
-          path="/ahmedhasan/about"
+          path="/about"
           element={
             <About
               changeNavOnScrollUpdater={changeNavOnScrollUpdater}
@@ -78,9 +78,9 @@ function App() {
             />
           }
         />
-        {/* <Route path="/ahmedhasan/cases" element={<Cases title="Ahmed Hasan | Cases" />} /> */}
+        {/* <Route path="/cases" element={<Cases title="Ahmed Hasan | Cases" />} /> */}
         <Route
-          path="/ahmedhasan/skills"
+          path="/skills"
           element={
             <Skills
               changeNavOnScrollUpdater={changeNavOnScrollUpdater}
@@ -89,11 +89,11 @@ function App() {
           }
         />
         <Route
-          path="/ahmedhasan/work"
+          path="/work"
           element={<Work title="Ahmed Hasan | Work" />}
         />
         <Route
-          path="/ahmedhasan/work/:id"
+          path="/work/:id"
           element={<Case changeNavOnScrollUpdater={changeNavOnScrollUpdater} />}
         />
         <Route
@@ -114,7 +114,7 @@ function App() {
               className={
                 isMounted
                   ? "modal yellowModal"
-                  : location.pathname.startsWith("/ahmedhasan/work") &&
+                  : location.pathname.startsWith("/work") &&
                     !changeNavOnScroll
                   ? "modal darkModal"
                   : "modal"
