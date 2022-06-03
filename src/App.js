@@ -61,7 +61,7 @@ function App() {
       <Routes>
         <Route
           // for github pages >>> "" not "/"
-          path=""
+          path="/"
           element={
             <Home
               showContactModalUpdater={showContactModalUpdater}
