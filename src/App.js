@@ -60,6 +60,7 @@ function App() {
       />
       <Routes>
         <Route
+          // for github pages
           path=""
           element={
             <Home
@@ -87,10 +88,7 @@ function App() {
             />
           }
         />
-        <Route
-          path="/work"
-          element={<Work title="Ahmed Hasan | Work" />}
-        />
+        <Route path="/work" element={<Work title="Ahmed Hasan | Work" />} />
         <Route
           path="/work/:id"
           element={<Case changeNavOnScrollUpdater={changeNavOnScrollUpdater} />}
@@ -113,8 +111,7 @@ function App() {
               className={
                 isMounted
                   ? "modal yellowModal"
-                  : location.pathname.startsWith("/work") &&
-                    !changeNavOnScroll
+                  : location.pathname.startsWith("/work") && !changeNavOnScroll
                   ? "modal darkModal"
                   : "modal"
               }
