@@ -8,7 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   //for github pages
-  <HashRouter basename="/">
+  <BrowserRouter
+  // basename="/ahmedhasan"
+  >
     <App />
-  </HashRouter>
+  </BrowserRouter>
 )

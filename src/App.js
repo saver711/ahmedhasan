@@ -94,7 +94,7 @@ function App() {
           element={<Case changeNavOnScrollUpdater={changeNavOnScrollUpdater} />}
         />
         <Route
-          path="/*"
+          path="*"
           element={
             <NotFound
               setIsMounted={setIsMounted}
