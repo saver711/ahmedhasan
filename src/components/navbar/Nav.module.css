@@ -1,0 +1,91 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.whiteNav {
+  border-bottom-color: #fff;
+}
+.whiteNav .burger span {
+  background-color: #fff;
+}
+.whiteNav .navBtn {
+  color: #fff;
+}
+.whiteNav .navBtn:first-child svg path {
+  stroke: #fff;
+}
+
+.burger {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0.5rem;
+}
+.burger span {
+  display: block;
+  height: 2px;
+  background-color: var(--dark-color);
+  transition: 0.5s ease-in-out;
+}
+.burger span:last-of-type {
+  transform-origin: 39% center;
+  width: 4rem;
+}
+.burger span:first-of-type {
+  transform-origin: 31.3% center;
+}
+.burger__top_on {
+  width: 4rem;
+  transform: rotate(45deg);
+}
+.burger__top_off {
+  width: 2rem;
+  transform: rotate(0deg);
+}
+.burger__bottom_on {
+  transform: rotate(-45deg);
+}
+.burger__bottom_off {
+  transform: rotate(0deg);
+}
+
+.navBtn {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  gap: 5px;
+  font-weight: 500;
+}
+.navBtn:first-child svg path {
+  stroke: var(--dark-color);
+}
+.navBtn:last-child svg {
+  width: 27px;
+}
+
+/* //////////queries////////// */
+@media (max-width: 370px) {
+  .burger span:last-of-type {
+    width: 3rem;
+  }
+  .burger span:first-of-type {
+    transform-origin: 18.3% center;
+  }
+  .burger__top_on {
+    width: 3rem;
+  }
+  .burger__top_off {
+    width: 1.5rem;
+  }
+
+  .navBtn {
+    font-size: 1.4rem;
+  }
+}/*# sourceMappingURL=Nav.module.css.map */

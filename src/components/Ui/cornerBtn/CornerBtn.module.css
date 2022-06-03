@@ -1,0 +1,26 @@
+.btn {
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
+}
+.btn div {
+  display: flex;
+  align-items: center;
+}
+.btn__text {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+}
+.btn svg {
+  font-size: 2.6rem;
+  color: var(--dark-color);
+}
+.btn span {
+  width: 70%;
+  aspect-ratio: 1/1;
+  z-index: -1;
+  border-radius: 50%;
+  border: 1px solid var(--slight-dark-color);
+  top: 40%;
+}/*# sourceMappingURL=CornerBtn.module.css.map */

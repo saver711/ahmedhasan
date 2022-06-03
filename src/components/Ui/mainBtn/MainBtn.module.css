@@ -1,0 +1,58 @@
+.btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.btn p {
+  text-transform: uppercase;
+  font-family: "Comfortaa", cursive;
+  width: auto;
+  margin-right: 1.5rem;
+  font-size: 1.4rem;
+}
+.btn__right {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  place-content: center;
+  transform: translate3d(0px, 0px, 0px) rotate3d(0, 0, 0, 0deg);
+}
+.btn__right > * {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.btn__right span {
+  display: block;
+  border-radius: 50%;
+  border: 1px solid var(--dark-color);
+}
+.btn__right svg {
+  font-size: 2.6rem;
+  color: var(--dark-color);
+}
+.btn__smallCircle {
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.btn__bigCircle {
+  width: 7.6rem;
+  height: 7.6rem;
+}
+
+/* ///////////queries/////// */
+@media (max-width: 550px) {
+  .btn__bigCircle {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+  .btn__smallCircle {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .btn__right svg {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=MainBtn.module.css.map */

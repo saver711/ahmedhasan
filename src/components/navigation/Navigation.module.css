@@ -1,0 +1,67 @@
+/* ////////////////////////// */
+.navigation {
+  padding: 1rem 0 0;
+  position: fixed;
+  background-color: var(--slight-white-color);
+  left: 0;
+  right: 0;
+}
+.navigation__item:not(:last-of-type) {
+  margin-bottom: 1.6rem;
+}
+.navigation__item a {
+  position: relative;
+  color: var(--white-color);
+  font-size: clamp(4rem, 9rem, 10vh);
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  text-shadow: var(--dark-color) 0px 0px 3px, var(--dark-color) 0px 0px 3px, var(--dark-color) 0px 0px 3px, var(--dark-color) 0px 0px 3px, var(--dark-color) 0px 0px 3px, var(--dark-color) 0px 0px 3px;
+}
+.navigation__item a span {
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  font-size: 20px;
+  text-shadow: var(--dark-color) 0px 0px 1px, var(--dark-color) 0px 0px 1px, var(--dark-color) 0px 0px 1px, var(--dark-color) 0px 0px 1px, var(--dark-color) 0px 0px 1px, var(--dark-color) 0px 0px 1px;
+}
+.navigation__item a.active {
+  color: var(--dark-color);
+}
+.navigation__item a:not(.active):hover {
+  color: var(--text-color);
+  text-shadow: var(--text-color) 0px 0px 3px, var(--text-color) 0px 0px 3px, var(--text-color) 0px 0px 3px, var(--text-color) 0px 0px 3px, var(--text-color) 0px 0px 3px, var(--text-color) 0px 0px 3px;
+}
+.navigation__item a:not(.active):hover span {
+  text-shadow: var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px;
+}
+
+.yellowNavigation {
+  background-color: var(--notFound-back-color);
+}
+
+.darkNav {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.darkNav li {
+  filter: invert(100%);
+}
+
+.theme {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 4rem;
+}
+.theme__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--very-slight-dark-color);
+  cursor: pointer;
+}
+.theme__icon:hover path {
+  fill: var(--dark-primary-color);
+}
+.theme__icon svg {
+  display: block;
+  width: 23px;
+}/*# sourceMappingURL=Navigation.module.css.map */

@@ -1,0 +1,240 @@
+.theCase {
+  position: relative;
+}
+.theCase__back {
+  padding-top: clamp(1.8rem, 17rem, 23vh);
+  background-position: 50% 50%, 0 0;
+  background-size: cover, auto;
+  background-repeat: no-repeat;
+}
+.theCase__title {
+  letter-spacing: 0.3rem;
+  color: transparent;
+  font-size: clamp(4rem, 5rem, 6vh);
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  text-shadow: #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px, #fff 0px 0px 3px;
+  text-transform: uppercase;
+}
+.theCase__title span {
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  font-size: 20px;
+  text-shadow: #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px, #fff 0px 0px 1px;
+}
+.theCase__subtitle {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  margin-bottom: 5.6rem;
+}
+.theCase header > div {
+  padding-bottom: 3rem;
+}
+.theCase__link {
+  float: right;
+}
+
+.props {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.props__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+}
+.props__top span {
+  color: var(--dark-color);
+}
+.props__colors, .props__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.props__color {
+  width: 7.6rem;
+  height: 7.6rem;
+  cursor: pointer;
+  background-color: #fff;
+}
+.props__color, .props__color > div {
+  border-radius: 50%;
+  border: 1px solid;
+}
+.props__color > div {
+  width: 70%;
+  height: 70%;
+  font-weight: 500;
+}
+.props__color > div:hover span {
+  display: block;
+}
+.props__color > div div {
+  flex-direction: column;
+  height: 100%;
+}
+.props__color > div span {
+  display: none;
+  font-size: 2rem;
+  line-height: 1;
+}
+.props__technology {
+  padding: 1rem 2rem;
+  border-radius: 60px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.mindset img,
+.preparation img {
+  border: 1px solid var(--very-slight-dark-color);
+  border-radius: 10px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.step {
+  position: relative;
+  padding-left: 2rem;
+}
+.step img:first-of-type {
+  aspect-ratio: 2/1;
+}
+.step p {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+}
+.step span {
+  color: var(--white-color);
+  font-size: 1.9rem;
+  font-weight: 700;
+  font-family: "Comfortaa", cursive;
+  text-shadow: var(--black-color) 0px 0px 1.2px, var(--black-color) 0px 0px 1.2px, var(--black-color) 0px 0px 1.2px, var(--black-color) 0px 0px 1.2px, var(--black-color) 0px 0px 1.2px, var(--black-color) 0px 0px 1.2px;
+  position: absolute;
+  left: 0;
+  top: -2rem;
+}
+.step span span {
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  font-size: 20px;
+  text-shadow: var(--black-color) 0px 0px 1px, var(--black-color) 0px 0px 1px, var(--black-color) 0px 0px 1px, var(--black-color) 0px 0px 1px, var(--black-color) 0px 0px 1px, var(--black-color) 0px 0px 1px;
+}
+
+.story__content {
+  display: flex;
+  gap: 1.7rem;
+}
+.story__content > div {
+  flex-basis: 50%;
+}
+.story__bold {
+  font-weight: 700;
+}
+.story__img img {
+  margin: -9rem auto;
+  width: clamp(280px, 400px, 90%);
+  filter: drop-shadow(2px 4px 8px #585858);
+}
+.story__text {
+  font-size: 1.7rem;
+}
+.story__text span {
+  text-decoration: underline;
+  position: relative;
+  display: inline-block;
+}
+.story__text span:hover img {
+  display: block;
+}
+.story__text span img {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+}
+.story__bold {
+  margin: 2rem 0 0.8rem;
+}
+
+.inspirations__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.inspirations__content a {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-weight: 800;
+  color: var(--dark-color);
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.inspirations__content a:hover {
+  text-decoration: underline;
+}
+.inspirations__content a svg {
+  color: var(--primary-color);
+}
+
+.inspirations {
+  padding-bottom: 10rem;
+}
+
+/* ///////////queries//////////// */
+@media (max-width: 550px) {
+  .theCase__title {
+    font-size: clamp(2rem, 3rem, 4vh);
+  }
+  .theCase__subtitle {
+    font-size: 1.4rem;
+  }
+}
+/* /////////queries///////// */
+@media (max-width: 750px) {
+  .props__top {
+    align-items: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  .props__colors {
+    flex-wrap: wrap;
+  }
+
+  .steps {
+    display: block;
+  }
+
+  .step:not(:last-of-type) {
+    margin-bottom: 7rem;
+  }
+
+  .story__img img {
+    margin: -2rem auto;
+  }
+}
+@media (max-width: 580px) {
+  .story__content {
+    flex-direction: column;
+  }
+  .story__content > div {
+    flex-basis: auto;
+  }
+  .story__img img {
+    margin: 2rem auto;
+    width: clamp(180px, 200px, 80%);
+  }
+}/*# sourceMappingURL=Case.module.css.map */

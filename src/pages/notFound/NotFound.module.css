@@ -1,0 +1,73 @@
+.app {
+  background-color: hsl(58deg, 38%, 29%);
+  width: 100vw;
+  height: 100vh;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app .text_container {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
+  z-index: 1;
+  margin: 1rem 0;
+  text-align: center;
+}
+.app .text_container h1 {
+  color: white;
+  font-family: "Comfortaa", cursive;
+  text-transform: uppercase;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.app .text_container p {
+  color: hsl(57deg, 38%, 46%);
+  font-weight: 500;
+  font-size: 1.4rem;
+  letter-spacing: 0.05rem;
+  margin: 0.5rem 0;
+  color: hsl(57deg, 38%, 65%);
+}
+.app .text_container a {
+  color: var(--primary-color);
+}
+.app .text_container a:hover {
+  border-bottom: 0.2rem solid var(--primary-color);
+}
+.app svg {
+  background-color: hsl(57deg, 38%, 27%);
+  width: 100%;
+  overflow: visible;
+}
+.app svg > path:nth-child(1) {
+  fill: hsl(57deg, 38%, 34%);
+  stroke: hsl(58deg, 38%, 17%);
+}
+.app svg > path:nth-child(2) {
+  fill: hsl(58deg, 38%, 29%);
+}
+.app svg > path:nth-child(6) {
+  fill: hsl(58deg, 38%, 17%);
+}
+.app svg text {
+  fill: hsl(57deg, 38%, 46%);
+  font-size: 660px;
+  font-weight: 800;
+  filter: drop-shadow(0 0 50px hsl(58deg, 38%, 17%));
+}
+.app svg > path:nth-child(8) {
+  fill: hsl(58deg, 38%, 29%);
+}
+.app .cactus path:nth-child(1) {
+  fill: var(--dark-primary-color);
+}
+.app .cactus path:nth-child(2) {
+  fill: var(--darkest-primary-color);
+}
+.app .cactus path:nth-child(3) {
+  fill: black;
+}/*# sourceMappingURL=NotFound.module.css.map */
