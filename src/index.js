@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //for github pages
   <HashRouter
-  basename="/ahmedhasan"
+  // basename="/ahmedhasan"
   >
     <App />
   </HashRouter>
