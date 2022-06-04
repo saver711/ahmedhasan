@@ -24,13 +24,15 @@ export const CaseColor = ({ color }) => {
   ///
   /////////// STATES
   ///
-  const [copy, copyUpdater] = useState(true)
+  const [copy, copyUpdater] = useState(false)
   ///
   /////////// SIDE EFFECTS
   ///
+
   let time
   useEffect(() => {
     if (copy) {
+      // clearTimeout(time)
       time = setTimeout(() => {
         copyUpdater(false)
       }, 1500)
@@ -44,9 +46,16 @@ export const CaseColor = ({ color }) => {
   ///
   /////////// EVENTS
   ///
+  //  let time
   const colorClickHandler = () => {
     navigator.clipboard.writeText(color)
     copyUpdater(true)
+    // copy && clearTimeout(time)
+    // if (copy) {
+    //   time = setTimeout(() => {
+    //     copyUpdater(false)
+    //   }, 1500)
+    // }
   }
   ///
   /////////// FUNCTIONS
@@ -56,7 +65,7 @@ export const CaseColor = ({ color }) => {
   return (
     <div
       onClick={colorClickHandler}
-      style={{ borderColor: color, }}
+      style={{ borderColor: color }}
       className={`centerFlex mouseMove ${classes.props__color}`}
       onMouseMove={(e) => {
         moveInTarget(e)
