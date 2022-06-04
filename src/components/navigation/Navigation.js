@@ -55,7 +55,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
     >
       <div className="container">
         <div className={`${classes.navigation__content}`}>
-          <div className={`${classes.theme}`}>
+          {/* <div className={`${classes.theme}`}>
             <div className={`centerFlex ${classes.theme__icon}`}>
               <LightThemeIcon />
             </div>
@@ -65,7 +65,7 @@ export const Navigation = ({ showNavigationUpdater, invert, white }) => {
             <div className={`centerFlex ${classes.theme__icon}`}>
               <DarkThemeIcon />
             </div>
-          </div>
+          </div> */}
 
           <motion.ul
             variants={comeFromLeftWithChildren}

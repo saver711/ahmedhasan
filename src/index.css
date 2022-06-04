@@ -569,7 +569,7 @@ progress {
 }
 @media (max-width: 525px) {
   .heading_big span {
-    font-size: 3.2rem;
+    font-size: 8vw;
   }
   .heading_big span::after {
     width: 10rem;
@@ -577,7 +577,7 @@ progress {
   }
 
   .heading_small span {
-    font-size: 2rem;
+    font-size: 5.5vw;
   }
   .heading_small span::after {
     width: 8rem;

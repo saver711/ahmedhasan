@@ -24,7 +24,7 @@ export const CaseColor = ({ color }) => {
   ///
   /////////// STATES
   ///
-  const [copy, copyUpdater] = useState(false)
+  const [copy, copyUpdater] = useState(true)
   ///
   /////////// SIDE EFFECTS
   ///
@@ -56,15 +56,21 @@ export const CaseColor = ({ color }) => {
   return (
     <div
       onClick={colorClickHandler}
-      style={{ borderColor: color }}
+      style={{ borderColor: color, }}
       className={`centerFlex mouseMove ${classes.props__color}`}
       onMouseMove={(e) => {
         moveInTarget(e)
+        Array.from(
+          e.target.closest(".mouseMove").parentElement.children
+        ).forEach((item) => (item.style.backgroundColor = "transparent"))
         e.target.closest(".mouseMove").style.backgroundColor = color
       }}
       onMouseLeave={(e) => {
         leaveTarget(e)
-        e.target.closest(".mouseMove").style.backgroundColor = "transparent"
+        Array.from(
+          e.target.closest(".mouseMove").parentElement.children
+        ).forEach((item) => (item.style.backgroundColor = "transparent"))
+        // e.target.closest(".mouseMove").style.backgroundColor = "transparent"
       }}
     >
       <div style={{ borderColor: color }}>

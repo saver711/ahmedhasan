@@ -244,6 +244,7 @@ button:disabled {
   background-color: var(--white-color);
   font-size: 1.8rem;
   box-shadow: 0 0 7px var(--slight-white-color);
+  z-index: 2;
 }
 .close__inner path {
   stroke: var(--dark-color);

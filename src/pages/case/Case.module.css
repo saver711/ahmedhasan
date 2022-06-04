@@ -63,7 +63,7 @@
 }
 .props__color, .props__color > div {
   border-radius: 50%;
-  border: 1px solid;
+  border: 1.8px solid;
 }
 .props__color > div {
   width: 70%;

@@ -63,7 +63,7 @@ export const CornerBtn = ({text}) => {
       className={`mouseMove ${classes.btn}`}
     >
       <Link
-        to={text}
+        to={`/${text}`}
         onMouseMove={(e) => moveInTarget(e)}
         onMouseLeave={(e) => leaveTarget(e)}
       >

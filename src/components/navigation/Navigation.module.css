@@ -34,6 +34,9 @@
 .navigation__item a:not(.active):hover span {
   text-shadow: var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px, var(--text-color) 0px 0px 1px;
 }
+.navigation__list {
+  margin-top: 4rem;
+}
 
 .yellowNavigation {
   background-color: var(--notFound-back-color);
@@ -44,24 +47,4 @@
 }
 .darkNav li {
   filter: invert(100%);
-}
-
-.theme {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 4rem;
-}
-.theme__icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--very-slight-dark-color);
-  cursor: pointer;
-}
-.theme__icon:hover path {
-  fill: var(--dark-primary-color);
-}
-.theme__icon svg {
-  display: block;
-  width: 23px;
 }/*# sourceMappingURL=Navigation.module.css.map */

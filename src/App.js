@@ -60,7 +60,6 @@ function App() {
       />
       <Routes>
         <Route
-          // for github pages >>> "" not "/"
           path="/"
           element={
             <Home
