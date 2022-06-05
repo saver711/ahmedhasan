@@ -1,9 +1,2 @@
-.icons {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.icon svg {
-  width: 3rem;
-}/*# sourceMappingURL=Social.module.css.map */
+.icons{align-items:center;display:flex}.icons>*+*{margin-left:10px}.icon svg{width:3rem}
+/*# sourceMappingURL=Social.module.css.map */

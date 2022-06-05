@@ -1,26 +1,2 @@
-.btn {
-  position: absolute;
-  bottom: 4rem;
-  right: 0;
-}
-.btn div {
-  display: flex;
-  align-items: center;
-}
-.btn__text {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  font-family: "Comfortaa", cursive;
-}
-.btn svg {
-  font-size: 2.6rem;
-  color: var(--dark-color);
-}
-.btn span {
-  width: 70%;
-  aspect-ratio: 1/1;
-  z-index: -1;
-  border-radius: 50%;
-  border: 1px solid var(--slight-dark-color);
-  top: 40%;
-}/*# sourceMappingURL=CornerBtn.module.css.map */
+.btn{bottom:4rem;position:absolute;right:0}.btn div{align-items:center;display:flex}.btn__text{font-family:Comfortaa,cursive;font-size:1.6rem;text-transform:uppercase}.btn svg{color:var(--dark-color);font-size:2.6rem}.btn span{aspect-ratio:1/1;border:1px solid var(--slight-dark-color);border-radius:50%;top:40%;width:70%;z-index:-1}
+/*# sourceMappingURL=CornerBtn.module.css.map */

@@ -17,13 +17,7 @@ import { Fan } from "../../assets/svgs/SiteSvgs"
 ///
 /////////// HELPER VARIABLES & FUNCTIONS
 ///
-// const latest = {
-//   id: "portfolio2022",
-//   title: "my latest project/case study",
-//   type: "web",
-//   subtitle: "My 2022 portfolio",
-//   img: "../../assets/imgs/work/portfolio2022.png",
-// }
+
 const allWork = [
   {
     id: "portfolio2022",
@@ -95,6 +89,41 @@ export const scrollDownVariants = {
     y: 0,
     x: "-50%",
     transition: {
+      type: "spring",
+      stiffness: 50,
+    },
+  },
+}
+
+const leftVariants = {
+  start: {
+    x: "-70vw",
+    opacity: 0,
+  },
+  end: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 1,
+      type: "spring",
+      stiffness: 50,
+      staggerChildren: 0.5,
+    },
+  },
+}
+
+const childVariants = {
+  start: {
+    x: "-70vw",
+    opacity: 0,
+  },
+  end: {
+    x: 0,
+    transform: "none",
+    opacity: 1,
+    transition: {
+      duration: 1,
       type: "spring",
       stiffness: 50,
     },
@@ -178,42 +207,48 @@ export const Work = ({ title }) => {
           className={`${classes.top} overlay`}
         >
           <div className={`container ${classes.works__padd}`}>
-            <div>
-              <p className={`${classes.title}`}>
+            <motion.div variants={leftVariants} initial="start" animate="end">
+              <motion.p variants={childVariants} className={`${classes.title}`}>
                 {allWork[0].title.split("<br/>")[0]}
                 <br />
                 {allWork[0].title.split("<br/>")[1]}
-              </p>
-              <p className={`${classes.subtitle}`}>{allWork[0].subtitle}</p>
-
-              <MainBtn white where={allWork[0].id} text="take a look" />
-
-              <motion.div
-                className={`${classes.scrollDown}`}
-                variants={scrollDownVariants}
-                initial="start"
-                animate="end"
-                onClick={scrollDownHandler}
+              </motion.p>
+              <motion.p
+                variants={childVariants}
+                className={`${classes.subtitle}`}
               >
-                <div
-                  className={`mouseMove`}
-                  onMouseMove={(e) => moveInTarget(e)}
-                  onMouseLeave={(e) => leaveTarget(e)}
-                >
-                  <Typed
-                    strings={["SELECTED WORK"]}
-                    typeSpeed={90}
-                    backSpeed={100}
-                    loop
-                    cursorChar=""
-                  />
+                {allWork[0].subtitle}
+              </motion.p>
 
-                  <i className={`${classes.scrollDown__arrow}`}>
-                    <CgArrowLongDown />
-                  </i>
-                </div>
+              <motion.div variants={childVariants}>
+                <MainBtn white where={allWork[0].id} text="take a look" />
               </motion.div>
-            </div>
+            </motion.div>
+            <motion.div
+              className={`${classes.scrollDown}`}
+              variants={scrollDownVariants}
+              initial="start"
+              animate="end"
+              onClick={scrollDownHandler}
+            >
+              <div
+                className={`mouseMove`}
+                onMouseMove={(e) => moveInTarget(e)}
+                onMouseLeave={(e) => leaveTarget(e)}
+              >
+                <Typed
+                  strings={["SELECTED WORK"]}
+                  typeSpeed={90}
+                  backSpeed={100}
+                  loop
+                  cursorChar=""
+                />
+
+                <i className={`${classes.scrollDown__arrow}`}>
+                  <CgArrowLongDown />
+                </i>
+              </div>
+            </motion.div>
           </div>
         </section>
 

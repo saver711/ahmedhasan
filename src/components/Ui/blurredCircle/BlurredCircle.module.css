@@ -1,7 +1,2 @@
-.circle {
-  background-color: var(--primary-color);
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  filter: blur(90px);
-}/*# sourceMappingURL=BlurredCircle.module.css.map */
+.circle{background-color:var(--primary-color);border-radius:50%;filter:blur(90px);height:200px;width:200px}
+/*# sourceMappingURL=BlurredCircle.module.css.map */

@@ -12,11 +12,6 @@ import { BiLinkAlt } from "react-icons/bi"
 import { BlurredCircle } from "../../components/Ui/blurredCircle/BlurredCircle"
 import { CornerBtn } from "../../components/Ui/cornerBtn/CornerBtn"
 import { motion } from "framer-motion"
-// import {
-//   comeFromBottom,
-//   comeFromLeft,
-//   comeFromRight,
-// } from "../../helpers/animations"
 
 ///
 /////////// HELPER VARIABLES & FUNCTIONS
@@ -140,6 +135,24 @@ const rotateInViewLeft = {
     },
   },
 }
+
+const leftVariants = {
+  start: {
+    x: "-70vw",
+    opacity: 0,
+  },
+  end: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      delay: 0.2,
+      duration: 1,
+      type: "spring",
+      stiffness: 50,
+      staggerChildren: 0.5,
+    },
+  },
+}
 ///
 export const Case = ({ changeNavOnScrollUpdater }) => {
   /////////// VARIABLES
@@ -224,16 +237,29 @@ export const Case = ({ changeNavOnScrollUpdater }) => {
           >
             <div className="container">
               <div>
-                <p className={`${classes.theCase__title}`}>
+                <motion.p
+                  variants={leftVariants}
+                  initial="start"
+                  animate="end"
+                  className={`${classes.theCase__title}`}
+                >
                   {theCase.title.split("<br/>")[0]}
                   <br />
                   {theCase.title.split("<br/>")[1]}
-                </p>
-                <p className={`${classes.theCase__subtitle}`}>
+                </motion.p>
+                <motion.p
+                  variants={leftVariants}
+                  initial="start"
+                  animate="end"
+                  className={`${classes.theCase__subtitle}`}
+                >
                   {theCase.subtitle}
-                </p>
+                </motion.p>
 
-                <a
+                <motion.a
+                  variants={rotateInViewLeft}
+                  initial="start"
+                  animate="end"
                   href={theCase.link}
                   target="_blank"
                   className={`${classes.theCase__link}`}
@@ -244,7 +270,7 @@ export const Case = ({ changeNavOnScrollUpdater }) => {
                       theCase.type === "web" ? "visite site" : "download app"
                     }
                   />
-                </a>
+                </motion.a>
               </div>
             </div>
           </header>
