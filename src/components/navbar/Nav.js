@@ -88,7 +88,7 @@ export const Nav = ({ showContactModalUpdater, invert, white, changeNavOnScroll}
       >
         <a
           className={classes.navBtn}
-          href="https://drive.google.com/uc?export=download&id=1VklUog5lWg5kzsWKcBgwifyIal4o-PjW"
+          href="https://drive.google.com/uc?export=download&id=1KPze6PZ7XQGS4HpsfV0KgvcjOK4lOsUa"
           download
         >
           <span>download cv</span>
