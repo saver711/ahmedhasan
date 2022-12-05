@@ -76,6 +76,14 @@ const allWork = [
     link: "https://play.google.com/store/apps/details?id=com.dawaraty.app",
     img: require("../../assets/imgs/work/dawaraty.webp"),
   },
+  {
+    type: "web",
+    id: "pos-test",
+    title: "pos test",
+    subtitle: "English Test",
+    link: "https://pot-test-app.onrender.com",
+    img: require("../../assets/imgs/work/pos.webp"),
+  },
 ]
 
 export const scrollDownVariants = {
