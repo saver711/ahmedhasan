@@ -10,6 +10,8 @@ import { Navigation } from "../navigation/Navigation"
 ///
 /////////// HELPER VARIABLES & FUNCTIONS
 ///
+const DRIVE =
+  "https://drive.google.com/uc?export=download&id=1d8gNyi25U2J5UV-RtDmoodkMVfurVUl2"
 const navVariants = {
   start: {
     y: -200,
@@ -30,7 +32,12 @@ const navVariants = {
 }
 const navClasses = ` ${classes.nav}`
 ///
-export const Nav = ({ showContactModalUpdater, invert, white, changeNavOnScroll}) => {
+export const Nav = ({
+  showContactModalUpdater,
+  invert,
+  white,
+  changeNavOnScroll,
+}) => {
   /////////// VARIABLES
   ///
 
@@ -86,11 +93,7 @@ export const Nav = ({ showContactModalUpdater, invert, white, changeNavOnScroll}
             : navClasses
         }
       >
-        <a
-          className={classes.navBtn}
-          href="https://drive.google.com/uc?export=download&id=1KPze6PZ7XQGS4HpsfV0KgvcjOK4lOsUa"
-          download
-        >
+        <a className={classes.navBtn} href={DRIVE} download>
           <span>download cv</span>
           <GrDocumentDownload />
         </a>
