@@ -32,7 +32,7 @@ const allWork = [
     id: "facebookClone",
     title: "facebook clone",
     subtitle: "The best approach to master REACT",
-    link: "https://facebook711.herokuapp.com/",
+    link: "https://facebook-clone-app.onrender.com",
     img: require("../../assets/imgs/work/clone.webp"),
   },
   {
