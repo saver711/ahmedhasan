@@ -27,11 +27,11 @@ export const Contact = ({ showContactModalUpdater }) => {
   ///
   const button = useRef()
   const validationSchema = Yup.object({
-    name: Yup.string().required("What is your full name?"),
-    email: Yup.string()
+    name: Yup.string().trim().required("What is your full name?"),
+    email: Yup.string().trim()
       .required("What is your email address?")
       .email("Email is not valid"),
-    message: Yup.string().required("Write a message for me!"),
+    message: Yup.string().trim().required("Write a message for me!"),
   })
   ///
   /////////// CUSTOM HOOKS
