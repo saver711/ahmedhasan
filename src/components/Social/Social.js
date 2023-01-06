@@ -90,7 +90,7 @@ return (
       </motion.li>
     )}
     <motion.li variants={childVariants} className={classes.icon}>
-      <a href="https://www.linkedin.com/in/ahmedhasan711" target="_blank">
+      <a href="https://www.linkedin.com/in/ahmedhassan711" target="_blank">
         <LinkedinIcon color={color || ""} />
       </a>
     </motion.li>
