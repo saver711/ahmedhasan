@@ -10,7 +10,8 @@ import { Navigation } from "../navigation/Navigation"
 ///
 /////////// HELPER VARIABLES & FUNCTIONS
 ///
-// const DRIVE ="https://drive.google.com/uc?export=download&id=1d8gNyi25U2J5UV-RtDmoodkMVfurVUl2"
+const DRIVE =
+  "https://drive.google.com/uc?export=download&id=1NAPRTJTahTBSR9IflOyby1DuQ7qJTh4Q"
 const navVariants = {
   start: {
     y: -200,
@@ -92,7 +93,7 @@ export const Nav = ({
             : navClasses
         }
       >
-        <a className={classes.navBtn} href="./CV_Ahmed_Hassan.pdf" download>
+        <a className={classes.navBtn} href={DRIVE}>
           <span>download cv</span>
           <GrDocumentDownload />
         </a>

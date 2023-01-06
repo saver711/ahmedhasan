@@ -66,7 +66,7 @@ const cases = [
         },
 
         {
-          innerText: "What is so special about this primary color?!",
+          innerText: "What is so special about this color?!",
           bold: true,
         },
         {
@@ -74,7 +74,8 @@ const cases = [
             "Since i was a kid at Primary School, i have always loved this one special color.",
         },
         {
-          innerText: "I have been using it to color literally everything “”.",
+          innerText:
+            "I have been using it to colorize literally everything “”.",
         },
         {
           innerText:
