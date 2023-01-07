@@ -11,7 +11,7 @@ import { Navigation } from "../navigation/Navigation"
 /////////// HELPER VARIABLES & FUNCTIONS
 ///
 const DRIVE =
-  "https://drive.google.com/uc?export=download&id=1NAPRTJTahTBSR9IflOyby1DuQ7qJTh4Q"
+  "https://drive.google.com/uc?export=download&id=1cY1pFQpyNHQKZaYUz4qBQwGCmPng8zX1"
 const navVariants = {
   start: {
     y: -200,
